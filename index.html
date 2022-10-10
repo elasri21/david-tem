@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple react admin</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/framework.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- https://technext.github.io/purple-react/dashboard -->
+    <header class="header-c pt-20 pb-20 d-flex align-c bg-white gap-20">
+        <div class="logo flex-1">
+            <img class="large-logo" src="./images/logo.svg" alt="">
+            <img class="mini-logo" src="./images/logo-mini.svg" alt="">
+        </div>
+        <div class="search flex-1 d-flex align-c gap-20">
+            <i class="fa-solid fa-bars pointer menu"></i>
+            <div class="search-box d-flex align-c gap-10 hide-mobile">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" class="border-n out-n">
+            </div>
+        </div>
+        <div class="profile flex-1 d-flex align-c gap-10">
+            <div class="avatar parent p-relative w-fit">
+                <img class="profile-size rad-50" src="./images/faces/face1.jpg" alt="">
+            </div>
+            <a href="#" class="name hide-mobile black-c fw-400 fs-13">David Greymaax</a>
+            <i class="fa-solid fa-angle-down pointer"></i>
+        </div>
+        <div class="icons flex-1 d-flex align-c gap-10 just-end">
+            <i class="fa-regular fa-envelope pointer msg parent p-relative"></i>
+            <i class="fa-regular fa-bell pointer bell parent p-relative"></i>
+            <i class="mdi mdi-power hide-medium pointer"></i>
+            <i class="mdi mdi-format-line-spacing hide-medium pointer"></i>
+        </div>
+    </header>
+    <div class="page d-flex mt-100">
+        <aside class="pt-20 bg-white hide-mobile">
+            <div class="profile pl-20 mb-30 pr-20 d-flex align-c gap-10">
+                <img class="rad-50 profile-size" src="./images/faces/face1.jpg" alt="">
+                <div class="info d-flex align-c gap-10 hide-medium">
+                    <div>
+                        <h3 class="fw-700 fs-18 title-c mb-5">David Grey.H</h3>
+                        <p class="fs-10 header-c">Project Manager</p>
+                    </div>
+                    <span class="c-flex bg-green p-relative c-white check-icon">
+                        <i class="fa-solid fa-check fs-10"></i>
+                    </span>
+                </div>
+            </div>
+            <ul>
+                <li class="pt-15 pb-15 pointer pl-20 pr-20 violet-c just-btw">
+                    <span class="hide-medium">Dashboard</span>
+                    <span>
+                        <i class="mdi mdi-home menu-icon"></i>
+                    </span>
+                </li>
+                <li class="trans pt-15 pb-15 pointer pl-20 pr-20 aside-link-c just-btw">
+                    <span class="hide-medium">Basic UI Elements</span>
+                    <span class="header-c">
+                        <i class="fa-solid fa-angle-left mr-5"></i>
+                        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                    </span>
+                </li>
+                <li class="trans pt-15 pb-15 pointer pl-20 pr-20 aside-link-c just-btw">
+                    <span class="hide-medium">Form Elements</span>
+                    <span class="header-c">
+                        <i class="fa-solid fa-angle-left mr-5"></i>
+                        <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                    </span>
+                </li>
+                <li class="trans pt-15 pb-15 pointer pl-20 pr-20 aside-link-c just-btw">
+                    <span class="hide-medium">Tables</span>
+                    <span class="header-c">
+                        <i class="fa-solid fa-angle-left mr-5"></i>
+                        <i class="mdi mdi-table-large menu-icon"></i>
+                    </span>
+                </li>
+                <li class="trans pt-15 pb-15 pointer pl-20 pr-20 aside-link-c just-btw">
+                    <span class="hide-medium">Icons</span>
+                    <span class="header-c">
+                        <i class="fa-solid fa-angle-left mr-5"></i>
+                        <i class="mdi mdi-contacts menu-icon"></i>
+                    </span>
+                </li>
+                <li class="trans pt-15 pb-15 pointer pl-20 pr-20 aside-link-c just-btw">
+                    <span class="hide-medium">User Pages</span>
+                    <span class="header-c">
+                        <i class="fa-solid fa-angle-left mr-5"></i>
+                        <i class="mdi mdi-lock menu-icon"></i>
+                    </span>
+                </li>
+                <li class="trans pt-15 pb-15 pointer pl-20 pr-20 aside-link-c just-btw">
+                    <span class="hide-medium">Error pages</span>
+                    <span class="header-c">
+                        <i class="fa-solid fa-angle-left mr-5"></i>
+                        <i class="mdi mdi-security menu-icon"></i>
+                    </span>
+                </li>
+                <li class="trans pt-15 pb-15 pointer pl-20 pr-20 aside-link-c just-btw">
+                    <span class="hide-medium">General pages</span>
+                    <span class="header-c">
+                        <i class="fa-solid fa-angle-left mr-5"></i>
+                        <i class="mdi mdi-medical-bag menu-icon"></i>
+                    </span>
+                </li>
+                <li class="trans pt-15 pb-15 pointer pl-20 pr-20 aside-link-c just-btw">
+                    <span class="hide-medium">Documentation</span>
+                    <span class="header-c">
+                        <i class="mdi mdi-file-document-box menu-icon"></i>
+                    </span>
+                </li>
+            </ul>
+        </aside>
+        <main class="flex-1 pt-50 pb-50 pl-30 pr-30">
+            <div class="content pt-30 pl-30 pr-30 pb-30">
+                <div class="head-content just-btw mb-30">
+                    <div class="icon d-flex align-c gap-10">
+                        <i class="mdi mdi-home home c-white fs-18 fw-700 gradient-violet c-flex p-10 rad-6"></i>
+                        <h3 class="fs-18 fw-600">Dashboard</h3>
+                    </div>
+                    <div class="overview overview-c fs-16 d-flex align-c gap-10">
+                        overview
+                        <i class="mdi mdi-alert-circle-outline pointer violet-c"></i>
+                    </div>
+                </div>
+                <div class="body-content">
+                    <div class="boxes d-flex gap-20">
+                        <div class="box rad-6 p-30 flex-1 c-white gradient-red">
+                            <div class="box-top just-btw mb-20">
+                                <h4 class="fw-400 fs-16">Weekly Sales</h4>
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <p class="fw-700 fs-18 mb-50">$ 15,0000</p>
+                            <p class="fs-13 fw-600">Increased by 60%</p>
+                        </div>
+                        <div class="box rad-6 p-30 flex-1 c-white gradient-blue">
+                            <div class="box-top just-btw mb-20">
+                                <h4 class="fw-400 fs-16">Weekly Orders</h4>
+                                <i class="mdi mdi-bookmark-outline"></i>
+                            </div>
+                            <p class="fw-700 fs-18 mb-50">3445,63</p>
+                            <p class="fs-13 fw-600">Decreased by 10%</p>
+                        </div>
+                        <div class="box rad-6 p-30 flex-1 c-white gradient-green">
+                            <div class="box-top just-btw mb-20">
+                                <h4 class="fw-400 fs-16">Visitors Online</h4>
+                                <i class="mdi mdi-diamond"></i>
+                            </div>
+                            <p class="fw-700 fs-18 mb-50">95,5741</p>
+                            <p class="fs-13 fw-600">Increased by 5%</p>
+                        </div>
+                    </div>
+                    <div class="statistics d-flex gap-20 mt-40">
+                        <div class="statistic bg-white p-30 rad-6 flex-2">
+                            <div class="statistic-head">
+                                <h3 class="fs-16 fw-600 w-full mb-20">Visit And Sales Statistivs</h3>
+                                <div class="countries d-flex align-c gap-20 header-c just-end">
+                                    <span class="d-flex align-c gap-10">
+                                        <span class="rad-50 bullet-size d-inline-block bg-violet"></span>
+                                        CHN
+                                    </span>
+                                    <span class="d-flex align-c gap-10">
+                                        <span class="rad-50 bullet-size d-inline-block bg-red"></span>
+                                        USA
+                                    </span>
+                                    <span class="d-flex align-c gap-10">
+                                        <span class="rad-50 bullet-size d-inline-block bg-blue"></span>
+                                        UK
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="statistic-body p-relative header-c pt-30 d-flex just-c align-end gap-20">
+                                <div class="line one p-absolute w-full"></div>
+                                <div class="line two  p-absolute w-full"></div>
+                                <div class="line three  p-absolute w-full"></div>
+                                <div class="line four  p-absolute w-full"></div>
+                                <div class="line five  p-absolute w-full"></div>
+                                <div class="month p-relative d-flex direction-column gap-20">
+                                    <div class="sticks sticks-height d-flex align-end gap-5">
+                                        <span style="height: 25%" class="stick bg-violet d-inline-block stick-width"></span>
+                                        <span style="height: 50%" class="stick bg-blue bg-red d-inline-block stick-width"></span>
+                                        <span style="height: 75%" class="stick bg-red d-inline-block stick-width"></span>
+                                    </div>
+                                    <div class="month-name">Jan</div>
+                                </div>
+                                <div class="month p-relative d-flex direction-column gap-20">
+                                    <div class="sticks sticks-height d-flex align-end gap-5">
+                                        <span style="height: 12.5%" class="stick bg-violet d-inline-block stick-width"></span>
+                                        <span style="height: 37.50%" class="stick bg-blue bg-red d-inline-block stick-width"></span>
+                                        <span style="height: 50%" class="stick bg-red d-inline-block stick-width"></span>
+                                    </div>
+                                    <div class="month-name">FER</div>
+                                </div>
+                                <div class="month p-relative d-flex direction-column gap-20">
+                                    <div class="sticks sticks-height d-flex align-end gap-5">
+                                        <span style="height: 17.5%" class="stick bg-violet d-inline-block stick-width"></span>
+                                        <span style="height: 25%" class="stick bg-blue bg-red d-inline-block stick-width"></span>
+                                        <span style="height: 75%" class="stick bg-red d-inline-block stick-width"></span>
+                                    </div>
+                                    <div class="month-name">MAR</div>
+                                </div>
+                                <div class="month p-relative d-flex direction-column gap-20">
+                                    <div class="sticks sticks-height d-flex align-end gap-5">
+                                        <span style="height: 40%" class="stick bg-violet d-inline-block stick-width"></span>
+                                        <span style="height: 13%" class="stick bg-blue bg-red d-inline-block stick-width"></span>
+                                        <span style="height: 60%" class="stick bg-red d-inline-block stick-width"></span>
+                                    </div>
+                                    <div class="month-name">APR</div>
+                                </div>
+                                <div class="month p-relative d-flex direction-column gap-20">
+                                    <div class="sticks sticks-height d-flex align-end gap-5">
+                                        <span style="height: 30%" class="stick bg-violet d-inline-block stick-width"></span>
+                                        <span style="height: 60%" class="stick bg-blue bg-red d-inline-block stick-width"></span>
+                                        <span style="height: 30%" class="stick bg-red d-inline-block stick-width"></span>
+                                    </div>
+                                    <div class="month-name">MAY</div>
+                                </div>
+                                <div class="month p-relative d-flex direction-column gap-20">
+                                    <div class="sticks sticks-height d-flex align-end gap-5">
+                                        <span style="height: 60%" class="stick bg-violet d-inline-block stick-width"></span>
+                                        <span style="height: 20%" class="stick bg-blue bg-red d-inline-block stick-width"></span>
+                                        <span style="height: 60%" class="stick bg-red d-inline-block stick-width"></span>
+                                    </div>
+                                    <div class="month-name">JUN</div>
+                                </div>
+                                <div class="month p-relative d-flex direction-column gap-20">
+                                    <div class="sticks sticks-height d-flex align-end gap-5">
+                                        <span style="height: 40%" class="stick bg-violet d-inline-block stick-width"></span>
+                                        <span style="height: 45%" class="stick bg-blue bg-red d-inline-block stick-width"></span>
+                                        <span style="height: 20%" class="stick bg-red d-inline-block stick-width"></span>
+                                    </div>
+                                    <div class="month-name">JUL</div>
+                                </div>
+                                <div class="month p-relative d-flex direction-column gap-20">
+                                    <div class="sticks sticks-height d-flex align-end gap-5">
+                                        <span style="height: 25%" class="stick bg-violet d-inline-block stick-width"></span>
+                                        <span style="height: 50%" class="stick bg-blue bg-red d-inline-block stick-width"></span>
+                                        <span style="height: 37.5%" class="stick bg-red d-inline-block stick-width"></span>
+                                    </div>
+                                    <div class="month-name">AUG</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trafic bg-white p-30 rad-6 flex-1">
+                            <div class="trafic-head">
+                                <h3 class="fs-16 fw-600 w-full mb-20">Traffic Sources</h3>
+                            </div>
+                            <div class="trafic-body c-flex mt-20">
+                                <div class="sources rad-50 bg-white"></div>
+                            </div>
+                            <div class="numbers mt-20 header-c">
+                                <div class="number just-btw mb-20">
+                                    <span class="d-flex align-c gap-10 fs-13">
+                                        <span class="rad-50 bullet-size d-inline-block bg-blue"></span>
+                                        Search Engined
+                                    </span>
+                                    <p>30%</p>
+                                </div>
+                                <div class="number just-btw mb-20">
+                                    <span class="d-flex align-c gap-10 fs-13">
+                                        <span class="rad-50 bullet-size d-inline-block bg-green"></span>
+                                        Direct Click
+                                    </span>
+                                    <p>%</p>
+                                </div>
+                                <div class="number just-btw mb-20">
+                                    <span class="d-flex align-c gap-10 fs-13">
+                                        <span class="rad-50 bullet-size d-inline-block bg-red"></span>
+                                        Bookmarks Click
+                                    </span>
+                                    <p>%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-tickets bg-white p-30 mt-40 rad-6">
+                        <h3 class="title-c fs-16 fw-600 mb-30">Recent Tickets</h3>
+                        <div class="table">
+                            <table class="">
+                                <thead class="d-block w-full">
+                                    <tr class="p-10 w-full just-btw border-b-eee">
+                                        <th class="d-inline-block text-c w-25">Assignee</th>
+                                        <th class="d-inline-block text-c w-25">Subject</th>
+                                        <th class="d-inline-block text-c w-25">Status</th>
+                                        <th class="d-inline-block text-c w-25">Last Update</th>
+                                        <th class="d-inline-block text-c w-25">Tracking ID</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="d-block w-full">
+                                    <tr class="p-10 w-full just-btw border-b-eee">
+                                        <td class="d-inline-block text-c w-25">
+                                            <div class="profile d-flex align-c gap-10">
+                                                <img src="./images/faces/face1.jpg" alt="" class="profile-size rad-50">
+                                                <p class="name">David Grey</p>
+                                            </div>
+                                        </td>
+                                        <td class="d-inline-block text-c w-25">
+                                            <p>Fund is not received</p>
+                                        </td class="d-inline-block text-c w-25">
+                                        <td>
+                                            <p class="gradient-green btn-shape c-white fs-13">Done</p>
+                                        </td>
+                                        <td class="d-inline-block text-c w-25">DEc 5, 2017</td>
+                                        <td class="d-inline-block text-c w-25">WD-12345</td>
+                                    </tr>
+                                    <tr class="p-10 w-full just-btw border-b-eee">
+                                        <td class="d-inline-block text-c w-25">
+                                            <div class="profile d-flex align-c gap-10">
+                                                <img src="./images/faces/face2.jpg" alt="" class="profile-size rad-50">
+                                                <p class="name">Stella Johnson</p>
+                                            </div>
+                                        </td>
+                                        <td class="d-inline-block text-c w-25">
+                                            <p>High Loading time</p>
+                                        </td class="d-inline-block text-c w-25">
+                                        <td>
+                                            <p class="gradient-yellow btn-shape c-white fs-13">Progressing</p>
+                                        </td>
+                                        <td class="d-inline-block text-c w-25">DEc 12, 2017</td>
+                                        <td class="d-inline-block text-c w-25">WD-12346</td>
+                                    </tr>
+                                    <tr class="p-10 w-full just-btw border-b-eee">
+                                        <td class="d-inline-block text-c w-25">
+                                            <div class="profile d-flex align-c gap-10">
+                                                <img src="./images/faces/face3.jpg" alt="" class="profile-size rad-50">
+                                                <p class="name">Marina Michel</p>
+                                            </div>
+                                        </td>
+                                        <td class="d-inline-block text-c w-25">
+                                            <p>Website down for one week</p>
+                                        </td class="d-inline-block text-c w-25">
+                                        <td>
+                                            <p class="gradient-blue btn-shape c-white fs-13">ON HOLD</p>
+                                        </td>
+                                        <td class="d-inline-block text-c w-25">DEc 16, 2017</td>
+                                        <td class="d-inline-block text-c w-25">WD-12347</td>
+                                    </tr>
+                                    <tr class="p-10 w-full just-btw">
+                                        <td class="d-inline-block text-c w-25">
+                                            <div class="profile d-flex align-c gap-10">
+                                                <img src="./images/faces/face4.jpg" alt="" class="profile-size rad-50">
+                                                <p class="name">John Doe</p>
+                                            </div>
+                                        </td>
+                                        <td class="d-inline-block text-c w-25">
+                                            <p>Losing Control on server</p>
+                                        </td class="d-inline-block text-c w-25">
+                                        <td>
+                                            <p class="gradient-red btn-shape c-white fs-13">REJECTED</p>
+                                        </td>
+                                        <td class="d-inline-block text-c w-25">DEc 3, 2017</td>
+                                        <td class="d-inline-block text-c w-25">WD-12348</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="calendar-recent-updates d-flex mt-40 gap-20">
+                        <div class="calendar flex-1 bg-white rad-6 ">
+                            <div class="calendar-head pt-30 pb-15 pl-15 pr-15 bg-green c-white">
+                                <h3 class="fw-700 fs-30 text-c">October 2022</h3>
+                                <div class="arrow just-btw">
+                                    <i class="fa-solid fa-angle-left fs-30 pointer"></i>
+                                    <i class="fa-solid fa-angle-right fs-30 pointer"></i>
+                                </div>
+                                <div class="days-names mt-40 d-flex gap-20">
+                                    <div class="day-name flex-1 text-c">Su</div>
+                                    <div class="day-name flex-1 text-c">Mo</div>
+                                    <div class="day-name flex-1 text-c">Tu</div>
+                                    <div class="day-name flex-1 text-c">We</div>
+                                    <div class="day-name flex-1 text-c">TH</div>
+                                    <div class="day-name flex-1 text-c">Fr</div>
+                                    <div class="day-name flex-1 text-c">Sa</div>
+                                </div>
+                            </div>
+                            <div class="calendar-body black-c pt-30 pb-15 pl-15 pr-15 bg-white rad-6">
+                                <div class="row d-flex gap-20 mb-30">
+                                    <div class="day-num flex-1"></div>
+                                    <div class="day-num flex-1"></div>
+                                    <div class="day-num flex-1"></div>
+                                    <div class="day-num flex-1"></div>
+                                    <div class="day-num flex-1"></div>
+                                    <div class="day-num flex-1"></div>
+                                    <div class="day-num flex-1">1</div>
+                                </div>
+                                <div class="row d-flex gap-20 mb-30">
+                                    <div class="day-num flex-1">2</div>
+                                    <div class="day-num flex-1">3</div>
+                                    <div class="day-num flex-1">4</div>
+                                    <div class="day-num flex-1">5</div>
+                                    <div class="day-num flex-1">6</div>
+                                    <div class="day-num flex-1">7</div>
+                                    <div class="day-num flex-1">8</div>
+                                </div>
+                                <div class="row d-flex gap-20 mb-30">
+                                    <div class="day-num flex-1">9</div>
+                                    <div class="day-num flex-1">10</div>
+                                    <div class="day-num flex-1">11</div>
+                                    <div class="day-num flex-1">12</div>
+                                    <div class="day-num flex-1">13</div>
+                                    <div class="day-num flex-1">14</div>
+                                    <div class="day-num flex-1">15</div>
+                                </div>
+                                <div class="row d-flex gap-20 mb-30">
+                                    <div class="day-num flex-1">16</div>
+                                    <div class="day-num flex-1">17</div>
+                                    <div class="day-num flex-1">18</div>
+                                    <div class="day-num flex-1">19</div>
+                                    <div class="day-num flex-1">20</div>
+                                    <div class="day-num flex-1">21</div>
+                                    <div class="day-num flex-1">22</div>
+                                </div>
+                                <div class="row d-flex gap-20 mb-30">
+                                    <div class="day-num flex-1">23</div>
+                                    <div class="day-num flex-1">24</div>
+                                    <div class="day-num flex-1">25</div>
+                                    <div class="day-num flex-1">26</div>
+                                    <div class="day-num flex-1">27</div>
+                                    <div class="day-num flex-1">28</div>
+                                    <div class="day-num flex-1">29</div>
+                                </div>
+                                <div class="row d-flex gap-20 mb-30">
+                                    <div class="day-num flex-1">30</div>
+                                    <div class="day-num flex-1">31</div>
+                                    <div class="day-num flex-1"></div>
+                                    <div class="day-num flex-1"></div>
+                                    <div class="day-num flex-1"></div>
+                                    <div class="day-num flex-1"></div>
+                                    <div class="day-num flex-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-updates flex-1 bg-white rad-6 p-30">
+                            <h3 class="fs-16 fw-400 black-c mb-20">Recent Updates</h3>
+                            <div class="info d-flex gap-20 header-c wrap mb-20">
+                                <div class="name">
+                                    <i class="fa-solid fa-user mr-5"></i>
+                                    Jack Menqu
+                                </div>
+                                <div class="date">
+                                    <i class="fa-solid fa-clock mr-5"></i>
+                                    October 3rd, 2021
+                                </div>
+                            </div>
+                            <div class="images d-flex gap-10 mb-10">
+                                <img class="flex-1 rad-6" src="./images/dashboard/img_1.jpg" alt="">
+                                <img class="flex-1 rad-6" src="./images/dashboard/img_2.jpg" alt="">
+                            </div>
+                            <div class="images d-flex gap-10">
+                                <img class="flex-1 rad-6" src="./images/dashboard/img_3.jpg" alt="">
+                                <img class="flex-1 rad-6" src="./images/dashboard/img_4.jpg" alt="">
+                            </div>
+                            <div class="description d-flex gap-10 align-strat mt-30">
+                                <img class="profile-size rad-50" src="./images/faces/face3.jpg" alt="">
+                                <div class="info">
+                                    <h4 class="fs-18 fw-600 just-btw mb-10">
+                                        School Website - Authentication Module.
+                                        <i class="fa-regular fa-heart header-c pointer"></i>
+                                    </h4>
+                                    <p class="fs-13 fw-400 black-c line16">
+                                        It is a long established fact that a reader will be distracted by the readable content of a page.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-status-todo mt-40 d-flex gap-20">
+                        <div class="project-status flex-2 p-30 bg-white rad-6">
+                            <h4 class="fs-18 fw-600 mb-20">Project Status</h4>
+                            <table class="d-block w-full">
+                                <thead class="d-block w-full">
+                                    <tr class="d-flex w-full border-b-eee pt-15 pb-15 pl-20 pr-20 gap-20">
+                                        <td class="flex-1">#</td>
+                                        <td class="flex-2">Name</td>
+                                        <td class="flex-2">Due Date</td>
+                                        <td class="flex-2">Progress</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="d-block w-full">
+                                    <tr class="d-flex w-full border-b-eee pt-15 pb-15 pl-20 pr-20 gap-20">
+                                        <td class="flex-1">1</td>
+                                        <td class="flex-2">Herman Beck</td>
+                                        <td class="flex-2">May 15, 2019</td>
+                                        <td class="flex-2">
+                                            <div class="progressing w-full">
+                                                <span style="width: 25%;" class="d-block gradient-green"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex w-full border-b-eee pt-15 pb-15 pl-20 pr-20 gap-20">
+                                        <td class="flex-1">2</td>
+                                        <td class="flex-2">Messy Adam</td>
+                                        <td class="flex-2">Jul 01, 2018</td>
+                                        <td class="flex-2">
+                                            <div class="progressing w-full">
+                                                <span style="width: 85%;" class="d-block gradient-red"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex w-full border-b-eee pt-15 pb-15 pl-20 pr-20 gap-20">
+                                        <td class="flex-1">3</td>
+                                        <td class="flex-2">John Richards</td>
+                                        <td class="flex-2">Apr 12, 2019</td>
+                                        <td class="flex-2">
+                                            <div class="progressing w-full">
+                                                <span style="width: 90%;" class="d-block gradient-yellow"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex w-full border-b-eee pt-15 pb-15 pl-20 pr-20 gap-20">
+                                        <td class="flex-1">2</td>
+                                        <td class="flex-2">Peter Meggik</td>
+                                        <td class="flex-2">May 15, 2015</td>
+                                        <td class="flex-2">
+                                            <div class="progressing w-full">
+                                                <span style="width: 50%;" class="d-block gradient-violet"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex w-full border-b-eee pt-15 pb-15 pl-20 pr-20 gap-20">
+                                        <td class="flex-1">5</td>
+                                        <td class="flex-2">Edward</td>
+                                        <td class="flex-2">May 03, 2016</td>
+                                        <td class="flex-2">
+                                            <div class="progressing w-full">
+                                                <span style="width: 50%;" class="d-block gradient-red"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex w-full border-b-eee pt-15 pb-15 pl-20 pr-20 gap-20">
+                                        <td class="flex-1">6</td>
+                                        <td class="flex-2">Ronald</td>
+                                        <td class="flex-2">Jun 05, 2017</td>
+                                        <td class="flex-2">
+                                            <div class="progressing w-full">
+                                                <span style="width: 70%;" class="d-block gradient-blue"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="todo flex-1 p-30 bg-white rad-6 pt-50">
+                            <form action="" class="d-flex align-c gap-5 mb-30">
+                                <input type="text" class="btn-sape flex-1 out-n pt-10 pb-10 pl-20 pr-20 trans rad-4">
+                                <input type="submit" value="Add" class="btn-sape border-n out-n rad-4 trans pointer pt-11 pb-11 pl-20 pr-20 text-c fw-700 gradient-violet c-white">
+                            </form>
+                            <div class="list-items">
+                                <div class="item just-btw border-b-eee pb-10 pt-10">
+                                    <input type="checkbox" name="item1" id="item-1" class="p-absolute">
+                                    <label for="item-1" class="d-block pointer p-relative pt-10 pb-10 pl-50 fs-14">
+                                        <span>Pick upkids from school</span>
+                                        <i class="fa-solid fa-check p-absolute"></i>
+                                    </label>
+                                    <i class="fa-regular fa-times-circle header-c fs-25 pointer times"></i>
+                                </div>
+                                <div class="item just-btw border-b-eee pb-10 pt-10">
+                                    <input type="checkbox" name="item2" id="item-2" class="p-absolute" checked>
+                                    <label for="item-2" class="d-block pointer p-relative pt-10 pb-10 pl-50 fs-14">
+                                        <span class="">Prepare for presentation</span>
+                                        <i class="fa-solid fa-check p-absolute"></i>
+                                    </label>
+                                    <i class="fa-regular fa-times-circle header-c fs-25 pointer times"></i>
+                                </div>
+                                <div class="item just-btw border-b-eee pb-10 pt-10">
+                                    <input type="checkbox" name="item3" id="item-3" class="p-absolute">
+                                    <label for="item-3" class="d-block pointer p-relative pt-10 pb-10 pl-50 fs-14">
+                                        <span>Print statements</span>
+                                        <i class="fa-solid fa-check p-absolute"></i>
+                                    </label>
+                                    <i class="fa-regular fa-times-circle header-c fs-25 pointer times"></i>
+                                </div>
+                                <div class="item just-btw border-b-eee pb-10 pt-10">
+                                    <input type="checkbox" name="item4" id="item-4" class="p-absolute">
+                                    <label for="item-4" class="d-block pointer p-relative pt-10 pb-10 pl-50 fs-14">
+                                        <span>Create invoice</span>
+                                        <i class="fa-solid fa-check p-absolute"></i>
+                                    </label>
+                                    <i class="fa-regular fa-times-circle header-c fs-25 pointer times"></i>
+                                </div>
+                                <div class="item just-btw border-b-eee pb-10 pt-10">
+                                    <input type="checkbox" name="item5" id="item-5" class="p-absolute" checked>
+                                    <label for="item-5" class="d-block pointer p-relative pt-10 pb-10 pl-50 fs-14">
+                                        <span class="">Call John</span>
+                                        <i class="fa-solid fa-check p-absolute"></i>
+                                    </label>
+                                    <i class="fa-regular fa-times-circle header-c fs-25 pointer times"></i>
+                                </div>
+                                <div class="item just-btw">
+                                    <input type="checkbox" name="item6" id="item-6" class="p-absolute">
+                                    <label for="item-6" class="d-block pointer p-relative pt-10 pb-10 pl-50 fs-14">
+                                        <span>Meeting with Alisa</span>
+                                        <i class="fa-solid fa-check p-absolute"></i>
+                                    </label>
+                                    <i class="fa-regular fa-times-circle header-c fs-25 pointer times"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="p-30 just-btw gap-20 wrap">
+                <div class="copyright fs-12 header-c fw-400">
+                    Copyright &copy; <a class="fs-12 c-green fw-400" href="#">bootstrapdash.com</a> 2020
+                </div>
+                <div class="free-templates fs-12 header-c fw-400">
+                    Free <a class="fs-12 c-green fw-400" href="#">react admin</a> templates from BootstrapDash.com.
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
